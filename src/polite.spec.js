@@ -13,6 +13,10 @@ describe('Dial position sequence', () => {
 
   it('The sequence for n=4 is 1-2-4-3', () => {
     expect(dialPositions(4).join(', ')).toEqual('1, 2, 4, 3');
+  });
+
+  it('The sequence for n=2 is 1-2', () => {
+    expect(dialPositions(2).join(', ')).toEqual('1, 2');
   })
 
   it('Numbers with duplicates in the sequence are polite', () => {
@@ -23,7 +27,4 @@ describe('Dial position sequence', () => {
     expect(polite(2)).toBe(false, 2);
   });
 
-  it('Console logs the impolite numbers', () => {
-    _.range(1, 10000).filter(n => !polite(n)).map(n => console.log(n));
-  });
 });
