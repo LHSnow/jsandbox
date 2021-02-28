@@ -1,5 +1,3 @@
-import { dialPositions } from './polite';
-
 describe('Dial', () => {
   it('The first six positions for n=12 would be 1, 2, 4, 7, 11, and 4', () => {
     expect(dialPositions(12).slice(0,6)).toEqual([1, 2, 4, 7, 11, 4]);

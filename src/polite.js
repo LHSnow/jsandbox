@@ -1,3 +1,3 @@
-export function dialPositions() {
+function dialPositions() {
   return [];
 }
