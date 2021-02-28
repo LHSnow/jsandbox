@@ -27,5 +27,8 @@
   "prettier": {
     "singleQuote": true,
     "trailingComma": "es5"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }

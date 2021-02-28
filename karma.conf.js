@@ -16,7 +16,7 @@ module.exports = function (config) {
     frameworks: ['jasmine'],
 
     // list of files / patterns to load in the browser
-    files: ['src/spelplan.js', 'src/*.js'],
+    files: ['node_modules/lodash/lodash.min.js', 'src/*.js'],
 
     client: {
       clearContext: false, // leave Jasmine Spec Runner output visible in browser
